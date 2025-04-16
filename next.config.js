@@ -1,13 +1,12 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   // experimental: {
   //   swcPlugins: [
-  //     ["next-superjson-plugin",{}]
+  //     ["next-superjson-plugin", {}]
   //   ]
-  // }
+  // },
   images: {
-    domains:[
+    domains: [
       "res.cloudinary.com",
       "avatars.githubusercontent.com",
       "lh3.googleusercontent.com"
@@ -16,4 +15,4 @@ const nextConfig: NextConfig = {
   /* config options here */
 };
 
-export default nextConfig;
+module.exports = nextConfig;
